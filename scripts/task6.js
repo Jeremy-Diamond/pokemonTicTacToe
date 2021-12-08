@@ -6,6 +6,7 @@ fetch("https://pokeapi.co/api/v2/pokemon?offset=0&limit=15000")
     createPokeList(pokemonObjectList)
 })
 let startGame = 2;
+let firstPokemonChosen = "?";
 function createPokeList(list) {
    
     newList = list.results;
@@ -31,8 +32,19 @@ function createPokeList(list) {
             player2List.add(currentOption2)
     });
 };
+
+
 function setUpPlayer1(){
     player1 = document.getElementById("player1").value
+    if(firstPokemonChosen == "?"){
+        firstPokemonChosen = player1
+    }
+    else{
+        if(firstPokemonChosen === player1){
+            window.alert('Sorry, That one has been taken. Please choose a differant pokemon');
+            return
+        }
+    }
     for (const i of newList) {
         let item = i
         let pokemonName = item["name"]
@@ -55,6 +67,17 @@ function setUpPlayer1(){
 document.getElementById("player1").addEventListener("change", player1FullImage=setUpPlayer1)
 function setUpPlayer2(){
     player2 = document.getElementById("player2").value
+
+    if(firstPokemonChosen == "?"){
+        firstPokemonChosen = player2
+    }
+    else{
+        if(firstPokemonChosen === player2){
+            window.alert('Sorry, That one has been taken. Please choose a differant pokemon');
+            return
+        }
+    }
+
     for (const i of newList) {
         let item = i
         //console.log(item["name"])
