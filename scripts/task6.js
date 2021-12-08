@@ -227,6 +227,7 @@ function checkBox8() {
   }
   else {
       document.getElementById("box8").src = player2FullImage;
+      console.log(player2FullImage)
       document.getElementById("box8").disabled = true;
       flag = 1;
   }
@@ -257,39 +258,39 @@ function findWinner(){
         b7 = document.getElementById("box7").src;
         b8 = document.getElementById("box8").src;
         b9 = document.getElementById("box9").src;
-    if(b1 != "http://127.0.0.1:5500/task6.html" & b2 != "http://127.0.0.1:5500/task6.html" & b3 != "http://127.0.0.1:5500/task6.html"){
+    if(b1 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b2 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b3 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"){
         winnerCount += (b1 === b2 & b2 === b3)
     }
-    if(b4 != "http://127.0.0.1:5500/task6.html" & b5 != "http://127.0.0.1:5500/task6.html" & b6 != "http://127.0.0.1:5500/task6.html"){
+    if(b4 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b5 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b6 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"){
         winnerCount += (b4 === b5 & b5 === b6)
     }
-    if(b7 != "http://127.0.0.1:5500/task6.html" & b8 != "http://127.0.0.1:5500/task6.html" & b9 != "http://127.0.0.1:5500/task6.html"){
+    if(b7 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b8 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b9 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"){
         winnerCount += (b7 === b8 & b8 === b9)
     }
 
-    if(b1 != "http://127.0.0.1:5500/task6.html" & b4 != "http://127.0.0.1:5500/task6.html" & b7 != "http://127.0.0.1:5500/task6.html"){
+    if(b1 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b4 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b7 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"){
         winnerCount += (b1 === b4 & b4 === b7)
     }
 
-    if(b2 != "http://127.0.0.1:5500/task6.html" & b5 != "http://127.0.0.1:5500/task6.html" & b8 != "http://127.0.0.1:5500/task6.html"){
+    if(b2 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b5 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b8 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"){
         winnerCount += (b2 === b5 & b5 === b8)
     }
 
-    if(b3 != "http://127.0.0.1:5500/task6.html" & b6 != "http://127.0.0.1:5500/task6.html" & b9 != "http://127.0.0.1:5500/task6.html"){
+    if(b3 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b6 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b9 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"){
         winnerCount += (b3 === b6 & b6 === b9)
     }
 
-    if(b1 != "http://127.0.0.1:5500/task6.html" & b5 != "http://127.0.0.1:5500/task6.html" & b9 != "http://127.0.0.1:5500/task6.html"){
+    if(b1 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b5 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b9 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"){
         winnerCount += (b1 === b5 & b5 === b9)
     }
 
-    if(b3 != "http://127.0.0.1:5500/task6.html" & b5 != "http://127.0.0.1:5500/task6.html" & b7 != "http://127.0.0.1:5500/task6.html"){
+    if(b3 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b5 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b7 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"){
         winnerCount += (b3 === b5 & b5 === b7)
     }
 
-    if(winnerCount == 0 & b1 != "http://127.0.0.1:5500/task6.html" & b2 != "http://127.0.0.1:5500/task6.html" & b3 != "http://127.0.0.1:5500/task6.html" 
-    & b4 != "http://127.0.0.1:5500/task6.html" & b5 != "http://127.0.0.1:5500/task6.html" & b6 != "http://127.0.0.1:5500/task6.html" 
-    & b7 != "http://127.0.0.1:5500/task6.html" & b8 != "http://127.0.0.1:5500/task6.html" & b9 != "http://127.0.0.1:5500/task6.html"){
+    if(winnerCount == 0 & b1 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b2 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b3 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+    & b4 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b5 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b6 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" 
+    & b7 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b8 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" & b9 != "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"){
         document.getElementById("message").innerHTML = "Good Match! You ended in a tie.";
         endGame()
     }
