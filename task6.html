@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon | Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lesson 2</a></li>
+            <li><a href="#">Lesson 3</a></li>
+            <li><a href="#">Lesson 4</a></li>
+            <li><a href="#">Lesson 5</a></li>
+            <li><a href="#" class="active">Lesson 6</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Tic Tac Toe</h1>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Choose your pokemon</span>.
+            </h2>
+            <body>
+                <div id ="pokemon">
+                    <div id="player1Selector"> Player 1:</div> 
+                        <select id="player1">
+                            <option>No Selection</option>
+                        </select>
+                    <section id="p1Img"></section>
+                    <div id="player2Selector"> Player 2: </div>
+                        <select id="player2">
+                            <option>No Selection</option>
+                        </select>
+                    <section id="p2Img"></section>
+                </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Tic Tac Toe</h2>
+            <div id=boardGrid>
+                <br><br>
+                
+                <input type="image" src="" alt="" id="box1" hidden=true onclick=
+                    "checkBox1(); findWinner()" readonly>
+          
+                <input type="image" src="" alt="" id="box2" hidden=true onclick=
+                    "checkBox2(); findWinner()" readonly>
+          
+                <input type="image" src="" alt="" id="box3" hidden=true onclick=
+                    "checkBox3(); findWinner()" readonly>
+                <br><br>
+          
+                <input type="image" src="" alt="" id="box4" hidden=true onclick=
+                    "checkBox4(); findWinner()" readonly>
+                      
+                <input type="image" src="" alt="" id="box5" hidden=true onclick=
+                    "checkBox5(); findWinner()" readonly>
+          
+                <input type="image" src="" alt="" id="box6" hidden=true onclick=
+                    "checkBox6(); findWinner()" readonly>
+          
+                <input type="image" src="" alt="" id="box7" hidden=true onclick=
+                    "checkBox7(); findWinner()" readonly>
+          
+                <input type="image" src="" alt="" id="box8" hidden=true onclick=
+                    "checkBox8(); findWinner()" readonly>
+          
+                <input type="image" src="" alt="" id="box9" hidden=true onclick=
+                    "checkBox9(); findWinner()" readonly>
+          
+
+                <button id="resetButton" onclick="resetGame()" hidden=true>
+                    RESET
+                </button>
+          
+                <br><br>
+                
+                <p id="message"></p>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span> | Final Project | Lesson 6
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/task6.js"></script>
+</body>
+
+</html>
