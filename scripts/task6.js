@@ -343,6 +343,3 @@ function startTheGame(){
         document.getElementById("resetButton").hidden = false;
     }
 }
-
-
-
