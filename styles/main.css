@@ -149,7 +149,6 @@ section {
 #box1, #box2, #box3, #box4, #box5, 
 #box6, #box7, #box8, #box9{
         width: 95%;
-        height: 95%;
         margin: 7.5px;
         border: 1px solid gray;
         border-radius: 6px;
